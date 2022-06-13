@@ -1,7 +1,8 @@
 {
-  "name": "@uniswap/widgets",
+  "name": "@dex/interface",
   "version": "1.0.7",
   "description": "Uniswap Interface",
+  "private": true,
   "homepage": ".",
   "license": "GPL-3.0-or-later",
   "scripts": {
@@ -33,6 +34,9 @@
       "last 1 safari version"
     ]
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
     "@ethersproject/experimental": "^5.4.0",
     "@fontsource/ibm-plex-mono": "^4.5.1",

@@ -1,5 +1,5 @@
+import { Pair } from '@dex/v2-sdk'
 import { Trans } from '@lingui/macro'
-import { Pair } from '@uniswap/v2-sdk'
 import { L2_CHAIN_IDS } from 'constants/chains'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'

@@ -1,3 +1,5 @@
+import { abi as GOVERNANCE_ABI } from '@dex/governance/build/GovernorAlpha.json'
+import { abi as UNI_ABI } from '@dex/governance/build/Uni.json'
 import { defaultAbiCoder, Interface } from '@ethersproject/abi'
 import { isAddress } from '@ethersproject/address'
 import { Contract } from '@ethersproject/contracts'
@@ -5,8 +7,6 @@ import { TransactionResponse } from '@ethersproject/providers'
 import { toUtf8String, Utf8ErrorFuncs, Utf8ErrorReason } from '@ethersproject/strings'
 // eslint-disable-next-line no-restricted-imports
 import { t } from '@lingui/macro'
-import { abi as GOVERNANCE_ABI } from '@uniswap/governance/build/GovernorAlpha.json'
-import { abi as UNI_ABI } from '@uniswap/governance/build/Uni.json'
 import { CurrencyAmount, Token } from '@uniswap/sdk-core'
 import GOVERNOR_BRAVO_ABI from 'abis/governor-bravo.json'
 import {

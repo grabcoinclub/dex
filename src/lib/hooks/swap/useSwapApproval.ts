@@ -1,6 +1,6 @@
+import { Pair, Route as V2Route, Trade as V2Trade } from '@dex/v2-sdk'
 import { Protocol, Trade } from '@uniswap/router-sdk'
 import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@uniswap/sdk-core'
-import { Pair, Route as V2Route, Trade as V2Trade } from '@uniswap/v2-sdk'
 import { Pool, Route as V3Route, Trade as V3Trade } from '@uniswap/v3-sdk'
 import { SWAP_ROUTER_ADDRESSES, V2_ROUTER_ADDRESS, V3_ROUTER_ADDRESS } from 'constants/addresses'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
@@ -103,6 +103,8 @@ export function useSwapApprovalOptimizedTrade(
         case SwapRouterVersion.V2V3:
           return trade
         case SwapRouterVersion.V2:
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           const pairs = trade.swaps[0].route.pools.filter((pool) => pool instanceof Pair) as Pair[]
           const v2Route = new V2Route(pairs, trade.inputAmount.currency, trade.outputAmount.currency)
           return new V2Trade(v2Route, trade.inputAmount, trade.tradeType)

@@ -1,6 +1,6 @@
+import IUniswapV2PairJson from '@dex/v2-core/build/IUniswapV2Pair.json'
+import IUniswapV2Router02Json from '@dex/v2-periphery/build/IUniswapV2Router02.json'
 import { Contract } from '@ethersproject/contracts'
-import IUniswapV2PairJson from '@uniswap/v2-core/build/IUniswapV2Pair.json'
-import IUniswapV2Router02Json from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
 import QuoterJson from '@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
 import TickLensJson from '@uniswap/v3-periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
 import UniswapInterfaceMulticallJson from '@uniswap/v3-periphery/artifacts/contracts/lens/UniswapInterfaceMulticall.sol/UniswapInterfaceMulticall.json'

@@ -1,7 +1,7 @@
+import { Pair } from '@dex/v2-sdk'
 import { Trans } from '@lingui/macro'
 import { Protocol } from '@uniswap/router-sdk'
 import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
 import { FeeAmount } from '@uniswap/v3-sdk'
 import AnimatedDropdown from 'components/AnimatedDropdown'
 import { AutoColumn } from 'components/Column'
@@ -135,6 +135,8 @@ export function getTokenPath(trade: InterfaceTrade<Currency, Currency, TradeType
       const entry: RoutingDiagramEntry['path'][0] = [
         tokenIn,
         tokenOut,
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         nextPool instanceof Pair ? V2_DEFAULT_FEE_TIER : nextPool.fee,
       ]
       path.push(entry)
