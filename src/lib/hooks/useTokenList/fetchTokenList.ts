@@ -4,7 +4,7 @@ import parseENSAddress from 'lib/utils/parseENSAddress'
 import uriToHttp from 'lib/utils/uriToHttp'
 
 import validateTokenList from './validateTokenList'
-
+// @TODO
 export const DEFAULT_TOKEN_LIST = 'https://gateway.ipfs.io/ipns/tokens.uniswap.org'
 
 const listCache = new Map<string, TokenList>()

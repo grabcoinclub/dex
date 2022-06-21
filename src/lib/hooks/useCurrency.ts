@@ -37,8 +37,12 @@ export function useTokenFromNetwork(tokenAddress: string | null | undefined): To
   const tokenContractBytes32 = useBytes32TokenContract(formattedAddress ? formattedAddress : undefined, false)
 
   const tokenName = useSingleCallResult(tokenContract, 'name', undefined, NEVER_RELOAD)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const tokenNameBytes32 = useSingleCallResult(tokenContractBytes32, 'name', undefined, NEVER_RELOAD)
   const symbol = useSingleCallResult(tokenContract, 'symbol', undefined, NEVER_RELOAD)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const symbolBytes32 = useSingleCallResult(tokenContractBytes32, 'symbol', undefined, NEVER_RELOAD)
   const decimals = useSingleCallResult(tokenContract, 'decimals', undefined, NEVER_RELOAD)
 

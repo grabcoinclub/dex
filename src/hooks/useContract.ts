@@ -66,15 +66,21 @@ export function useContract<T extends Contract = Contract>(
 }
 
 export function useV2MigratorContract() {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<V3Migrator>(V3_MIGRATOR_ADDRESSES, V2MigratorABI, true)
 }
 
 export function useTokenContract(tokenAddress?: string, withSignerIfPossible?: boolean) {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<Erc20>(tokenAddress, ERC20_ABI, withSignerIfPossible)
 }
 
 export function useWETHContract(withSignerIfPossible?: boolean) {
   const { chainId } = useActiveWeb3React()
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<Weth>(
     chainId ? WRAPPED_NATIVE_CURRENCY[chainId]?.address : undefined,
     WETH_ABI,
@@ -83,22 +89,32 @@ export function useWETHContract(withSignerIfPossible?: boolean) {
 }
 
 export function useERC721Contract(nftAddress?: string) {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<Erc721>(nftAddress, ERC721_ABI, false)
 }
 
 export function useERC1155Contract(nftAddress?: string) {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<Erc1155>(nftAddress, ERC1155_ABI, false)
 }
 
 export function useArgentWalletDetectorContract() {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<ArgentWalletDetector>(ARGENT_WALLET_DETECTOR_ADDRESS, ARGENT_WALLET_DETECTOR_ABI, false)
 }
 
 export function useENSRegistrarContract(withSignerIfPossible?: boolean) {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<EnsRegistrar>(ENS_REGISTRAR_ADDRESSES, ENS_ABI, withSignerIfPossible)
 }
 
 export function useENSResolverContract(address: string | undefined, withSignerIfPossible?: boolean) {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<EnsPublicResolver>(address, ENS_PUBLIC_RESOLVER_ABI, withSignerIfPossible)
 }
 
@@ -119,10 +135,14 @@ export function useV2RouterContract(): Contract | null {
 }
 
 export function useInterfaceMulticall() {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<UniswapInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI, false) as UniswapInterfaceMulticall
 }
 
 export function useV3NFTPositionManagerContract(withSignerIfPossible?: boolean): NonfungiblePositionManager | null {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<NonfungiblePositionManager>(
     NONFUNGIBLE_POSITION_MANAGER_ADDRESSES,
     NFTPositionManagerABI,
@@ -131,6 +151,8 @@ export function useV3NFTPositionManagerContract(withSignerIfPossible?: boolean):
 }
 
 export function useV3Quoter() {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract<Quoter>(QUOTER_ADDRESSES, QuoterABI)
 }
 

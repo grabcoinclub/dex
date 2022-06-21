@@ -133,6 +133,8 @@ export function useUserClaimData(account: string | null | undefined): UserClaimD
 export function useUserHasAvailableClaim(account: string | null | undefined): boolean {
   const userClaimData = useUserClaimData(account)
   const distributorContract = useMerkleDistributorContract()
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const isClaimedResult = useSingleCallResult(distributorContract, 'isClaimed', [userClaimData?.index])
   // user is in blob and contract marks as unclaimed
   return Boolean(userClaimData && !isClaimedResult.loading && isClaimedResult.result?.[0] === false)

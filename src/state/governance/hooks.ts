@@ -101,6 +101,8 @@ const GovernanceInterface = new Interface(GOVERNANCE_ABI)
 
 // get count of all proposals made in the latest governor contract
 function useProposalCount(contract: Contract | null): number | undefined {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const { result } = useSingleCallResult(contract, 'proposalCount')
 
   return result?.[0]?.toNumber()
@@ -244,13 +246,25 @@ export function useAllProposalData(): { data: ProposalData[]; loading: boolean }
     return countToIndices(proposalCount2, 8)
   }, [proposalCount2])
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const proposalsV0 = useSingleContractMultipleData(gov0, 'proposals', gov0ProposalIndexes)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const proposalsV1 = useSingleContractMultipleData(gov1, 'proposals', gov1ProposalIndexes)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const proposalsV2 = useSingleContractMultipleData(gov2, 'proposals', gov2ProposalIndexes)
 
   // get all proposal states
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const proposalStatesV0 = useSingleContractMultipleData(gov0, 'state', gov0ProposalIndexes)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const proposalStatesV1 = useSingleContractMultipleData(gov1, 'state', gov1ProposalIndexes)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const proposalStatesV2 = useSingleContractMultipleData(gov2, 'state', gov2ProposalIndexes)
 
   // get metadata from past events
@@ -331,6 +345,8 @@ export function useProposalData(governorIndex: number, id: string): ProposalData
 
 export function useQuorum(governorIndex: number): CurrencyAmount<Token> | undefined {
   const latestGovernanceContract = useLatestGovernanceContract()
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const quorumVotes = useSingleCallResult(latestGovernanceContract, 'quorumVotes')?.result?.[0]
   const { chainId } = useActiveWeb3React()
   const uni = useMemo(() => (chainId ? UNI[chainId] : undefined), [chainId])
@@ -351,6 +367,8 @@ export function useQuorum(governorIndex: number): CurrencyAmount<Token> | undefi
 export function useUserDelegatee(): string {
   const { account } = useActiveWeb3React()
   const uniContract = useUniContract()
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const { result } = useSingleCallResult(uniContract, 'delegates', [account ?? undefined])
   return result?.[0] ?? undefined
 }
@@ -361,6 +379,8 @@ export function useUserVotes(): { loading: boolean; votes: CurrencyAmount<Token>
   const uniContract = useUniContract()
 
   // check for available votes
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const { result, loading } = useSingleCallResult(uniContract, 'getCurrentVotes', [account ?? undefined])
   return useMemo(() => {
     const uni = chainId ? UNI[chainId] : undefined
@@ -375,6 +395,8 @@ export function useUserVotesAsOfBlock(block: number | undefined): CurrencyAmount
 
   // check for available votes
   const uni = useMemo(() => (chainId ? UNI[chainId] : undefined), [chainId])
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const votes = useSingleCallResult(uniContract, 'getPriorVotes', [account ?? undefined, block ?? undefined])
     ?.result?.[0]
   return votes && uni ? CurrencyAmount.fromRawAmount(uni, votes) : undefined
@@ -477,6 +499,8 @@ export function useCreateProposalCallback(): (
 
 export function useLatestProposalId(address: string | undefined): string | undefined {
   const latestGovernanceContract = useLatestGovernanceContract()
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const res = useSingleCallResult(latestGovernanceContract, 'latestProposalIds', [address])
   return res?.result?.[0]?.toString()
 }
@@ -485,6 +509,8 @@ export function useProposalThreshold(): CurrencyAmount<Token> | undefined {
   const { chainId } = useActiveWeb3React()
 
   const latestGovernanceContract = useLatestGovernanceContract()
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const res = useSingleCallResult(latestGovernanceContract, 'proposalThreshold')
   const uni = useMemo(() => (chainId ? UNI[chainId] : undefined), [chainId])
 

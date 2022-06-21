@@ -158,7 +158,7 @@ export default function Pool() {
       link: '/add/ETH',
       external: false,
     },
-    {
+    /*{
       content: (
         <MenuItem>
           <Trans>Migrate</Trans>
@@ -167,7 +167,7 @@ export default function Pool() {
       ),
       link: '/migrate/v2',
       external: false,
-    },
+    },*/
     {
       content: (
         <MenuItem>
@@ -175,7 +175,7 @@ export default function Pool() {
           <Layers size={16} />
         </MenuItem>
       ),
-      link: '/pool/v2',
+      link: '/pool',
       external: false,
     },
     {

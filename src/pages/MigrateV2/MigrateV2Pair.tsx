@@ -128,6 +128,8 @@ function V2PairMigration({
   const theme = useTheme()
   const v2FactoryAddress = chainId ? V2_FACTORY_ADDRESSES[chainId] : undefined
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const pairFactory = useSingleCallResult(pair, 'factory')
   const isNotUniswap = pairFactory.result?.[0] && pairFactory.result[0] !== v2FactoryAddress
 
@@ -683,8 +685,11 @@ export default function MigrateV2Pair({
   const pair = usePairContract(validatedAddress ? validatedAddress : undefined)
 
   // get token addresses from pair contract
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const token0AddressCallState = useSingleCallResult(pair, 'token0', undefined, NEVER_RELOAD)
   const token0Address = token0AddressCallState?.result?.[0]
+  // @ts-ignore
   const token1Address = useSingleCallResult(pair, 'token1', undefined, NEVER_RELOAD)?.result?.[0]
 
   // get tokens
@@ -700,6 +705,8 @@ export default function MigrateV2Pair({
   // get data required for V2 pair migration
   const pairBalance = useTokenBalance(account ?? undefined, liquidityToken)
   const totalSupply = useTotalSupply(liquidityToken)
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const [reserve0Raw, reserve1Raw] = useSingleCallResult(pair, 'getReserves')?.result ?? []
   const reserve0 = useMemo(
     () => (token0 && reserve0Raw ? CurrencyAmount.fromRawAmount(token0, reserve0Raw) : undefined),

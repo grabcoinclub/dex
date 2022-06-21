@@ -8,6 +8,8 @@ import useIsArgentWallet from './useIsArgentWallet'
 export function useArgentWalletContract(): ArgentWalletContract | null {
   const { account } = useActiveWeb3React()
   const isArgentWallet = useIsArgentWallet()
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   return useContract(
     isArgentWallet ? account ?? undefined : undefined,
     ArgentWalletContractABI,

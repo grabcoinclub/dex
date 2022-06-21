@@ -2,14 +2,14 @@
   "name": "@dex/default-token-list",
   "version": "3.2.0",
   "description": "◦ The Uniswap default token list",
-  "main": "build/uniswap-default.tokenlist.json",
+  "main": "build/dex-default.tokenlist.json",
   "scripts": {
     "test": "mocha",
-    "build": "rimraf build && mkdir -p build && node src/write.js > build/uniswap-default.tokenlist.json",
+    "build": "rimraf build && mkdir -p build && node src/write.js > build/dex-default.tokenlist.json",
     "prepublishOnly": "npm test && npm run build"
   },
   "files": [
-    "build/uniswap-default.tokenlist.json"
+    "build/dex-default.tokenlist.json"
   ],
   "repository": {
     "type": "git",

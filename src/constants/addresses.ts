@@ -6,6 +6,7 @@ import { SupportedChainId } from './chains'
 
 type AddressMap = { [chainId: number]: string }
 
+// @TODO GC
 export const UNI_ADDRESS: AddressMap = constructSameAddressMap('0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984')
 export const MULTICALL_ADDRESS: AddressMap = {
   ...constructSameAddressMap('0x1F98415757620B543A52E61c46B32eB19261F984', [
@@ -19,7 +20,7 @@ export const MULTICALL_ADDRESS: AddressMap = {
 }
 export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS)
 
-export const V2_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D')
+export const V2_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0xcEc166AE0bc907fcF73859Dc2f7d49f59F78d8D7')
 export const V3_ROUTER_ADDRESS: AddressMap = constructSameAddressMap('0xE592427A0AEce92De3Edee1F18E0157C05861564', [
   SupportedChainId.OPTIMISM,
   SupportedChainId.OPTIMISTIC_KOVAN,

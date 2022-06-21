@@ -34,8 +34,8 @@ jobs:
         id: upload
         uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.3
         with:
-          pin-name: Uniswap Default Token List
-          path: 'build/uniswap-default.tokenlist.json'
+          pin-name: DEX Token List
+          path: 'build/dex-default.tokenlist.json'
           pinata-api-key: ${{ secrets.PINATA_API_KEY }}
           pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
 

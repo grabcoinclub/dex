@@ -4,12 +4,12 @@ import { L2_CHAIN_IDS } from 'constants/chains'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { useContext, useMemo } from 'react'
-import { ChevronsRight } from 'react-feather'
+//import { ChevronsRight } from 'react-feather'
 import { Link } from 'react-router-dom'
 import { Text } from 'rebass'
 import styled, { ThemeContext } from 'styled-components/macro'
 
-import { ButtonOutlined, ButtonPrimary, ButtonSecondary } from '../../components/Button'
+import { /*ButtonOutlined,*/ ButtonPrimary, ButtonSecondary } from '../../components/Button'
 import Card from '../../components/Card'
 import { AutoColumn } from '../../components/Column'
 import { CardBGImage, CardNoise, CardSection, DataCard } from '../../components/earn/styled'
@@ -191,15 +191,15 @@ export default function Pool() {
                   </ThemedText.MediumHeader>
                 </HideSmall>
                 <ButtonRow>
-                  <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/add/v2/ETH">
+                  <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/add/ETH">
                     <Trans>Create a pair</Trans>
                   </ResponsiveButtonSecondary>
-                  <ResponsiveButtonPrimary id="find-pool-button" as={Link} to="/pool/v2/find" padding="6px 8px">
+                  <ResponsiveButtonPrimary id="find-pool-button" as={Link} to="/pool/find" padding="6px 8px">
                     <Text fontWeight={500} fontSize={16}>
                       <Trans>Import Pool</Trans>
                     </Text>
                   </ResponsiveButtonPrimary>
-                  <ResponsiveButtonPrimary id="join-pool-button" as={Link} to="/add/v2/ETH" padding="6px 8px">
+                  <ResponsiveButtonPrimary id="join-pool-button" as={Link} to="/add/ETH" padding="6px 8px">
                     <Text fontWeight={500} fontSize={16}>
                       <Trans>Add V2 Liquidity</Trans>
                     </Text>
@@ -247,9 +247,9 @@ export default function Pool() {
                       )
                   )}
                   <RowFixed justify="center" style={{ width: '100%' }}>
-                    <ButtonOutlined
+                    {/*<ButtonOutlined
                       as={Link}
-                      to="/migrate/v2"
+                      to="/migrate"
                       id="import-pool-link"
                       style={{
                         padding: '8px 16px',
@@ -261,7 +261,7 @@ export default function Pool() {
                     >
                       <ChevronsRight size={16} style={{ marginRight: '8px' }} />
                       <Trans>Migrate Liquidity to V3</Trans>
-                    </ButtonOutlined>
+                    </ButtonOutlined>*/}
                   </RowFixed>
                 </>
               ) : (

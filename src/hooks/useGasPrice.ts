@@ -22,6 +22,8 @@ export default function useGasPrice(): JSBI | undefined {
   const { address } = useENSAddress('fast-gas-gwei.data.eth')
   const contract = useContract(address ?? undefined, CHAIN_DATA_ABI, false)
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const resultStr = useSingleCallResult(contract, 'latestAnswer').result?.[0]?.toString()
   return useMemo(() => (typeof resultStr === 'string' ? JSBI.BigInt(resultStr) : undefined), [resultStr])
 }

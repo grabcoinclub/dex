@@ -585,7 +585,7 @@ export function PositionPage({
         />
         <AutoColumn gap="md">
           <AutoColumn gap="sm">
-            <Link style={{ textDecoration: 'none', width: 'fit-content', marginBottom: '0.5rem' }} to="/pool">
+            <Link style={{ textDecoration: 'none', width: 'fit-content', marginBottom: '0.5rem' }} to="/pool/v3">
               <HoverText>
                 <Trans>← Back to Pools Overview</Trans>
               </HoverText>

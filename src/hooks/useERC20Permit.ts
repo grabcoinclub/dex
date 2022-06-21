@@ -131,6 +131,8 @@ export function useERC20Permit(
   const eip2612Contract = useEIP2612Contract(tokenAddress)
   const isArgentWallet = useIsArgentWallet()
   const nonceInputs = useMemo(() => [account ?? undefined], [account])
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const tokenNonceState = useSingleCallResult(eip2612Contract, 'nonces', nonceInputs)
   const permitInfo =
     overridePermitInfo ?? (chainId && tokenAddress ? PERMITTABLE_TOKENS[chainId]?.[tokenAddress] : undefined)

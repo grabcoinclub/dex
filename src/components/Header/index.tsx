@@ -15,7 +15,7 @@ import { useNativeCurrencyBalances } from 'state/wallet/hooks'
 import styled from 'styled-components/macro'
 
 import { ReactComponent as Logo } from '../../assets/svg/logo.svg'
-import { ExternalLink, ThemedText } from '../../theme'
+import { /*ExternalLink,*/ ThemedText } from '../../theme'
 import ClaimModal from '../claim/ClaimModal'
 import { CardNoise } from '../earn/styled'
 import Menu from '../Menu'
@@ -217,7 +217,7 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `
 
-const StyledExternalLink = styled(ExternalLink).attrs({
+/*const StyledExternalLink = styled(ExternalLink).attrs({
   activeClassName,
 })<{ isActive?: boolean }>`
   ${({ theme }) => theme.flexRowNoWrap}
@@ -243,7 +243,7 @@ const StyledExternalLink = styled(ExternalLink).attrs({
     color: ${({ theme }) => darken(0.1, theme.text1)};
     text-decoration: none;
   }
-`
+`*/
 
 export default function Header() {
   const { account, chainId } = useActiveWeb3React()
@@ -263,7 +263,7 @@ export default function Header() {
   const scrollY = useScrollPosition()
 
   const {
-    infoLink,
+    //infoLink,
     nativeCurrency: { symbol: nativeCurrencySymbol },
   } = CHAIN_INFO[chainId ? chainId : SupportedChainId.MAINNET]
 
@@ -293,15 +293,15 @@ export default function Header() {
         >
           <Trans>Pool</Trans>
         </StyledNavLink>
-        {(!chainId || chainId === SupportedChainId.MAINNET) && (
+        {/*(!chainId || chainId === SupportedChainId.MAINNET) && (
           <StyledNavLink id={`vote-nav-link`} to={'/vote'}>
             <Trans>Vote</Trans>
           </StyledNavLink>
-        )}
-        <StyledExternalLink id={`charts-nav-link`} href={infoLink}>
+        )*/}
+        {/*<StyledExternalLink id={`charts-nav-link`} href={infoLink}>
           <Trans>Charts</Trans>
           <sup>↗</sup>
-        </StyledExternalLink>
+        </StyledExternalLink>*/}
       </HeaderLinks>
 
       <HeaderControls>
