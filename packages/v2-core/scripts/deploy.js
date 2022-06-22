@@ -9,6 +9,7 @@ const {
 } = process.env;
 
 
+const overrides = { gasPrice: 2000000000 };
 
 async function main() {
   const provider = new providers.JsonRpcProvider(PROVIDER_RPC_URL);
@@ -18,7 +19,7 @@ async function main() {
   const factory =  new ContractFactory(UniswapV2Factory.abi, UniswapV2Factory.bytecode, wallet);
   const FeeToSetter = wallet.address;
   const args = [FeeToSetter];
-  const contract = await factory.deploy(...args);
+  const contract = await factory.deploy(...args, overrides);
   console.log('UniswapV2Factory address:',contract.address);
   await contract.deployTransaction.wait();
 
