@@ -1,5 +1,5 @@
 const DEX_LIST =
-  'https://raw.githubusercontent.com/grabcoinclub/dex/main/packages/default-token-list/build/dex-default.tokenlist.json'
+  'https://raw.githubusercontent.com/grabcoinclub/dex/main/packages/default-token-list/build/pdex-default.tokenlist.json'
 const UNI_LIST = 'https://tokens.uniswap.org'
 const AAVE_LIST = 'tokenlist.aave.eth'
 const BA_LIST = 'https://raw.githubusercontent.com/The-Blockchain-Association/sec-notice-list/master/ba-sec-list.json'
