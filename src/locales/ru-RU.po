@@ -98,7 +98,7 @@ msgstr "<0> Подсказка:</0> выберите действие и опи�
 
 #: src/pages/PoolFinder/index.tsx
 msgid "<0>Tip:</0> Use this tool to find v2 pools that don't automatically appear in the interface."
-msgstr "<0> Подсказка:</0> Используйте этот инструмент для поиска пулов, которые не отображаются автоматически в интерфейсе."
+msgstr "<0> Подсказка:</0> Используйте этот инструмент для поиска пулов в V2, которые не отображаются автоматически в интерфейсе."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "<0>Tip:</0> When you add liquidity, you will receive pool tokens representing your position. These tokens automatically earn fees proportional to your share of the pool, and can be redeemed at any time."
@@ -153,7 +153,7 @@ msgstr "Добавить ликвидность"
 
 #: src/pages/Pool/v2.tsx
 msgid "Add V2 Liquidity"
-msgstr "Добавить ликвидность"
+msgstr "Добавить ликвидность в V2"
 
 #: src/pages/PoolFinder/index.tsx
 msgid "Add liquidity."
@@ -875,7 +875,7 @@ msgstr "Импортировать пул"
 
 #: src/components/NavigationTabs/index.tsx
 msgid "Import V2 Pool"
-msgstr "Импортировать пул"
+msgstr "Импортировать пул из V2"
 
 #: src/components/SearchModal/ImportList.tsx
 msgid "Import at your own risk"
@@ -1449,7 +1449,7 @@ msgstr "Выберите токен"
 
 #: src/pages/PoolFinder/index.tsx
 msgid "Select a token to find your v2 liquidity."
-msgstr "Выберите токен, чтобы найти свою ликвидность."
+msgstr "Выберите токен, чтобы найти свою ликвидность в V2."
 
 #: src/pages/CreateProposal/ProposalActionSelector.tsx
 msgid "Select an action"
@@ -2167,7 +2167,7 @@ msgstr "Вы получите"
 
 #: src/pages/Pool/v2.tsx
 msgid "Your V2 liquidity"
-msgstr "Ваша ликвидность"
+msgstr "Ваша ликвидность в V2"
 
 #: src/pages/Pool/index.tsx
 msgid "Your active V3 liquidity positions will appear here."

@@ -1,10 +1,10 @@
 import Loader from 'components/Loader'
 import TopLevelModals from 'components/TopLevelModals'
 import ApeModeQueryParamReader from 'hooks/useApeModeQueryParamReader'
-import { lazy, Suspense } from 'react'
+import { /*lazy,*/ Suspense } from 'react'
 import { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import { Redirect, Route, Switch } from 'react-router-dom'
+import { /*Redirect,*/ Route, Switch } from 'react-router-dom'
 import styled from 'styled-components/macro'
 
 import GoogleAnalyticsReporter from '../components/analytics/GoogleAnalyticsReporter'
@@ -17,8 +17,8 @@ import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
 //import AddLiquidity from './AddLiquidity'
 //import { RedirectDuplicateTokenIds } from './AddLiquidity/redirects'
 import { RedirectDuplicateTokenIdsV2 } from './AddLiquidityV2/redirects'
-import Earn from './Earn'
-import Manage from './Earn/Manage'
+//import Earn from './Earn'
+//import Manage from './Earn/Manage'
 //import MigrateV2 from './MigrateV2'
 //import MigrateV2Pair from './MigrateV2/MigrateV2Pair'
 //import Pool from './Pool'
@@ -28,9 +28,9 @@ import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
 //import RemoveLiquidityV3 from './RemoveLiquidity/V3'
 import Swap from './Swap'
-import { OpenClaimAddressModalAndRedirectToSwap, RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
+import { /*OpenClaimAddressModalAndRedirectToSwap,*/ RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
 
-const Vote = lazy(() => import('./Vote'))
+//const Vote = lazy(() => import('./Vote'))
 
 const AppWrapper = styled.div`
   display: flex;
@@ -93,7 +93,7 @@ export default function App() {
             <TopLevelModals />
             <Suspense fallback={<Loader />}>
               <Switch>
-                <Route strict path="/vote" component={Vote} />
+                {/*<Route strict path="/vote" component={Vote} />
                 <Route exact strict path="/create-proposal">
                   <Redirect to="/vote/create-proposal" />
                 </Route>
@@ -101,7 +101,7 @@ export default function App() {
                 <Route exact strict path="/uni" component={Earn} />
                 <Route exact strict path="/uni/:currencyIdA/:currencyIdB" component={Manage} />
 
-                <Route exact strict path="/send" component={RedirectPathToSwapOnly} />
+                <Route exact strict path="/send" component={RedirectPathToSwapOnly} />*/}
                 <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
                 <Route exact strict path="/swap" component={Swap} />
 

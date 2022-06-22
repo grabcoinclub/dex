@@ -1,6 +1,6 @@
 {
   "name": "DEX Default List",
-  "timestamp": "2022-06-21T18:01:43.901Z",
+  "timestamp": "2022-06-22T10:08:53.322Z",
   "version": {
     "major": 3,
     "minor": 2,
@@ -9,7 +9,6 @@
   "tags": {},
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
   "keywords": [
-    "uniswap",
     "dex",
     "default"
   ],

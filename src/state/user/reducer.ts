@@ -71,7 +71,7 @@ export const initialState: UserState = {
   timestamp: currentTimestamp(),
   URLWarningVisible: true,
   showSurveyPopup: undefined,
-  showDonationLink: true,
+  showDonationLink: false,
 }
 
 const userSlice = createSlice({
