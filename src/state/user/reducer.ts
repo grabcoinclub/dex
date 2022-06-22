@@ -61,7 +61,7 @@ export const initialState: UserState = {
   userDarkMode: null,
   userExpertMode: false,
   userLocale: null,
-  userClientSideRouter: false,
+  userClientSideRouter: true,
   userHideClosedPositions: false,
   userSlippageTolerance: 'auto',
   userSlippageToleranceHasBeenMigratedToAuto: true,
@@ -71,7 +71,7 @@ export const initialState: UserState = {
   timestamp: currentTimestamp(),
   URLWarningVisible: true,
   showSurveyPopup: undefined,
-  showDonationLink: true,
+  showDonationLink: false,
 }
 
 const userSlice = createSlice({
