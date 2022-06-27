@@ -142,8 +142,8 @@ msgid "Add"
 msgstr "Ongeza"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "Ongeza <0/> na <1/> kwenye Uniswap V2"
+msgid "Add <0/> and <1/> to Poolex"
+msgstr "Ongeza <0/> na <1/> kwenye Poolex"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -215,8 +215,8 @@ msgid "Amount"
 msgstr "Kiasi"
 
 #: src/hooks/useSwapCallback.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Hitilafu ilitokea wakati wa kujaribu kutekeleza ubadilishaji huu. Unaweza kuhitaji kuongeza uvumilivu wako wa kuteleza. Ikiwa hiyo haifanyi kazi, kunaweza kuwa na kutokubaliana na ishara unayofanya biashara. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Poolex V3."
+msgstr "Hitilafu ilitokea wakati wa kujaribu kutekeleza ubadilishaji huu. Unaweza kuhitaji kuongeza uvumilivu wako wa kuteleza. Ikiwa hiyo haifanyi kazi, kunaweza kuwa na kutokubaliana na ishara unayofanya biashara. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Poolex V3."
 
 #: src/components/earn/StakingModal.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -782,8 +782,8 @@ msgid "For"
 msgstr "Kwa maana"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "Kwa kila dimbwi lililoonyeshwa hapa chini, bonyeza hamisha ili kuondoa ukwasi wako kutoka kwa Uniswap V2 na uweke kwenye Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from Poolex and deposit it into Poolex V3."
+msgstr "Kwa kila dimbwi lililoonyeshwa hapa chini, bonyeza hamisha ili kuondoa ukwasi wako kutoka kwa Poolex na uweke kwenye Poolex V3."
 
 #: src/components/swap/SwapModalHeader.tsx
 #: src/pages/Swap/index.tsx
@@ -1057,8 +1057,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "Hamisha Kioevu cha V2"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "Hamisha ishara zako za ukwasi kutoka kwa Uniswap V2 hadi Uniswap V3."
+msgid "Migrate your liquidity tokens from Poolex to Poolex V3."
+msgstr "Hamisha ishara zako za ukwasi kutoka kwa Poolex hadi Poolex V3."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1606,8 +1606,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "Ishara ya pato haiwezi kuhamishwa. Kunaweza kuwa na shida na ishara ya pato."
 
 #: src/hooks/useSwapCallback.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Ishara ya pato haiwezi kuhamishwa. Kunaweza kuwa na shida na ishara ya pato. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Poolex V3."
+msgstr "Ishara ya pato haiwezi kuhamishwa. Kunaweza kuwa na shida na ishara ya pato. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Poolex V3."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1658,8 +1658,8 @@ msgid "This tool will safely migrate your {0} liquidity to V3. The process is co
 msgstr "Chombo hiki kitahamisha {0} kwa V3. Mchakato huo hauna shukrani kabisa kwa"
 
 #: src/hooks/useSwapCallback.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Uuzaji huu hautafaulu kwa sababu ya harakati za bei. Jaribu kuongeza uvumilivu wako wa kuteleza. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Poolex V3."
+msgstr "Uuzaji huu hautafaulu kwa sababu ya harakati za bei. Jaribu kuongeza uvumilivu wako wa kuteleza. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Poolex V3."
 
 #: src/hooks/useSwapCallback.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1846,8 +1846,8 @@ msgid "Unknown Source"
 msgstr "Chanzo kisichojulikana"
 
 #: src/hooks/useSwapCallback.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Hitilafu isiyojulikana{0}. Jaribu kuongeza uvumilivu wako wa kuteleza. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Poolex V3."
+msgstr "Hitilafu isiyojulikana{0}. Jaribu kuongeza uvumilivu wako wa kuteleza. Kumbuka: ada ya uhamishaji na toa rehani haziendani na Poolex V3."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -2089,7 +2089,7 @@ msgid "You are creating a pool"
 msgstr "Unaunda dimbwi"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
+msgid "You are the first liquidity provider for this Poolex V3 pool. Your liquidity will migrate at the current {0} price."
 msgstr "Wewe ndiye mtoaji wa kwanza wa ukwasi wa dimbwi hili la V3 lisilobadilishwa. Ukwasi wako kuhamia kwa bei {0}"
 
 #: src/pages/AddLiquidityV2/index.tsx
@@ -2133,8 +2133,8 @@ msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "Lazima uwe na {formattedProposalThreshold} ili kuwasilisha pendekezo"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Unapaswa kuweka tu ukwasi kwenye Uniswap V3 kwa bei unayoamini ni sahihi. <0 /> Ikiwa bei inaonekana si sahihi, unaweza kubadilisha kwa kuhamisha bei au subiri mtu mwingine afanye hivyo."
+msgid "You should only deposit liquidity into Poolex V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "Unapaswa kuweka tu ukwasi kwenye Poolex V3 kwa bei unayoamini ni sahihi. <0 /> Ikiwa bei inaonekana si sahihi, unaweza kubadilisha kwa kuhamisha bei au subiri mtu mwingine afanye hivyo."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."

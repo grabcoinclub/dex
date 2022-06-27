@@ -142,8 +142,8 @@ msgid "Add"
 msgstr "הוספה"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "הוסף את <0/> ו- <1/> ל- Uniswap V2"
+msgid "Add <0/> and <1/> to Poolex"
+msgstr "הוסף את <0/> ו- <1/> ל- Poolex"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -215,8 +215,8 @@ msgid "Amount"
 msgstr "כמות"
 
 #: src/hooks/useSwapCallback.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "אירעה שגיאה בניסיון לבצע החלפה זו. יתכן שתצטרך להגביר את סובלנות ההחלקה שלך. אם זה לא עובד, ייתכן שיש אי התאמה לאסימון שאתה סוחר בו. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Poolex V3."
+msgstr "אירעה שגיאה בניסיון לבצע החלפה זו. יתכן שתצטרך להגביר את סובלנות ההחלקה שלך. אם זה לא עובד, ייתכן שיש אי התאמה לאסימון שאתה סוחר בו. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Poolex V3."
 
 #: src/components/earn/StakingModal.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -782,8 +782,8 @@ msgid "For"
 msgstr "ל"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "עבור כל מאגר המוצג למטה, לחץ על העבר כדי להסיר את הנזילות שלך מ- Uniswap V2 והפקד אותו ל- Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from Poolex and deposit it into Poolex V3."
+msgstr "עבור כל מאגר המוצג למטה, לחץ על העבר כדי להסיר את הנזילות שלך מ- Poolex והפקד אותו ל- Poolex V3."
 
 #: src/components/swap/SwapModalHeader.tsx
 #: src/pages/Swap/index.tsx
@@ -1057,8 +1057,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "העבר נזילות V2"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "העבר את אסימוני הנזילות שלך מ- Uniswap V2 ל- Uniswap V3."
+msgid "Migrate your liquidity tokens from Poolex to Poolex V3."
+msgstr "העבר את אסימוני הנזילות שלך מ- Poolex ל- Poolex V3."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1606,8 +1606,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "לא ניתן להעביר את אסימון הפלט. ייתכן שיש בעיה באסימון הפלט."
 
 #: src/hooks/useSwapCallback.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "לא ניתן להעביר את אסימון הפלט. ייתכן שיש בעיה באסימון הפלט. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Poolex V3."
+msgstr "לא ניתן להעביר את אסימון הפלט. ייתכן שיש בעיה באסימון הפלט. הערה: עמלה על אסימון העברה וריבוס אינם תואמים ל- Poolex V3."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1658,8 +1658,8 @@ msgid "This tool will safely migrate your {0} liquidity to V3. The process is co
 msgstr "כלי זה יעביר בבטחה את נזילות {0} שלך ל- V3. התהליך חסר אמון לחלוטין בזכות"
 
 #: src/hooks/useSwapCallback.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "עסקה זו לא תצליח בגלל תנועת מחירים. נסה להגביר את סובלנות ההחלקה שלך. הערה: עמלה על אסימון העברה ומיקום מחדש אינם תואמים ל- Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Poolex V3."
+msgstr "עסקה זו לא תצליח בגלל תנועת מחירים. נסה להגביר את סובלנות ההחלקה שלך. הערה: עמלה על אסימון העברה ומיקום מחדש אינם תואמים ל- Poolex V3."
 
 #: src/hooks/useSwapCallback.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1846,8 +1846,8 @@ msgid "Unknown Source"
 msgstr "מקור לא ידוע"
 
 #: src/hooks/useSwapCallback.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "שגיאה לא ידועה{0}. נסה להגביר את סובלנות ההחלקה שלך. הערה: עמלה על אסימון העברה ומיקום מחדש אינם תואמים ל- Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Poolex V3."
+msgstr "שגיאה לא ידועה{0}. נסה להגביר את סובלנות ההחלקה שלך. הערה: עמלה על אסימון העברה ומיקום מחדש אינם תואמים ל- Poolex V3."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -2089,8 +2089,8 @@ msgid "You are creating a pool"
 msgstr "אתה יוצר בריכה"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "אתה ספק הנזילות הראשון לבריכת Uniswap V3 זו. הנזילות שלך תעבור במחיר {0} הנוכחי."
+msgid "You are the first liquidity provider for this Poolex V3 pool. Your liquidity will migrate at the current {0} price."
+msgstr "אתה ספק הנזילות הראשון לבריכת Poolex V3 זו. הנזילות שלך תעבור במחיר {0} הנוכחי."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2133,8 +2133,8 @@ msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "עליך {formattedProposalThreshold} קולות כדי להגיש הצעה"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "עליכם להפקיד נזילות רק ב- Uniswap V3 במחיר שלדעתכם נכון. <0/> אם נראה שהמחיר שגוי, באפשרותך להחליף כדי להזיז את המחיר או לחכות שמישהו אחר יעשה זאת."
+msgid "You should only deposit liquidity into Poolex V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "עליכם להפקיד נזילות רק ב- Poolex V3 במחיר שלדעתכם נכון. <0/> אם נראה שהמחיר שגוי, באפשרותך להחליף כדי להזיז את המחיר או לחכות שמישהו אחר יעשה זאת."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."

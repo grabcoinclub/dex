@@ -13,6 +13,7 @@ import { useAppDispatch, useAppSelector } from 'state/hooks'
 import { V3TradeState } from 'state/routing/types'
 import { isTradeBetter } from 'utils/isTradeBetter'
 
+import { TOKEN_SHORTHANDS } from '../../constants/tokens'
 import { useCurrency } from '../../hooks/Tokens'
 import useENS from '../../hooks/useENS'
 import useParsedQueryString from '../../hooks/useParsedQueryString'
@@ -242,7 +243,9 @@ function parseCurrencyFromURLParameter(urlParam: any): string {
   if (typeof urlParam === 'string') {
     const valid = isAddress(urlParam)
     if (valid) return valid
-    if (urlParam.toUpperCase() === 'ETH') return 'ETH'
+    const upper = urlParam.toUpperCase()
+    if (upper === 'ETH') return 'ETH'
+    if (upper in TOKEN_SHORTHANDS) return upper
   }
   return ''
 }

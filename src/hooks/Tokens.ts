@@ -2,10 +2,11 @@ import { arrayify } from '@ethersproject/bytes'
 import { parseBytes32String } from '@ethersproject/strings'
 import { Currency, Token } from '@uniswap/sdk-core'
 import { CHAIN_INFO, L2_CHAIN_IDS, SupportedChainId, SupportedL2ChainId } from 'constants/chains'
+import useNativeCurrency from 'lib/hooks/useNativeCurrency'
 import { useMemo } from 'react'
 
 import { createTokenFilterFunction } from '../components/SearchModal/filtering'
-import { ExtendedEther, WETH9_EXTENDED } from '../constants/tokens'
+import { /*ExtendedEther, WETH9_EXTENDED*/ } from '../constants/tokens'
 import { useAllLists, useCombinedActiveList, useInactiveListUrls } from '../state/lists/hooks'
 import { WrappedTokenInfo } from '../state/lists/wrappedTokenInfo'
 import { NEVER_RELOAD, useSingleCallResult } from '../state/multicall/hooks'
@@ -226,19 +227,17 @@ export function useToken(tokenAddress?: string | null): Token | undefined | null
 }
 
 export function useCurrency(currencyId: string | null | undefined): Currency | null | undefined {
-  const { chainId } = useActiveWeb3React()
-  const isETH = currencyId?.toUpperCase() === 'ETH'
-  const token = useToken(isETH ? undefined : currencyId)
-  const extendedEther = useMemo(
-    () =>
-      chainId
-        ? ExtendedEther.onChain(chainId)
-        : // display mainnet when not connected
-          ExtendedEther.onChain(SupportedChainId.MAINNET),
-    [chainId]
-  )
-  const weth = chainId ? WETH9_EXTENDED[chainId] : undefined
+  const nativeCurrency = useNativeCurrency()
+  //const { chainId } = useActiveWeb3React()
+  const isNative = Boolean(nativeCurrency && currencyId?.toUpperCase() === 'ETH')
+
+  const token = useToken(isNative ? undefined : currencyId)
+
   if (currencyId === null || currencyId === undefined) return currencyId
-  if (weth?.address?.toUpperCase() === currencyId?.toUpperCase()) return weth
-  return isETH ? extendedEther : token
+
+  // this case so we use our builtin wrapped token instead of wrapped tokens on token lists
+  const wrappedNative = nativeCurrency?.wrapped
+  if (wrappedNative?.address?.toUpperCase() === currencyId?.toUpperCase()) return wrappedNative
+
+  return isNative ? nativeCurrency : token
 }

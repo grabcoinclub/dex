@@ -31,7 +31,7 @@ describe('scenario:setFeeTo', () => {
   })
 
   let factory: Contract
-  beforeEach('deploy uniswap v2', async () => {
+  beforeEach('deploy Poolex', async () => {
     factory = await deployContract(wallet, UniswapV2Factory, [timelock.address])
   })
 
