@@ -621,8 +621,8 @@ msgid "Deposit Assets"
 msgstr "Ký quỹ tài sản"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "Gửi token UNI-V2 LP"
+msgid "Deposit PLP Tokens"
+msgstr "Gửi token PLP"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -637,8 +637,8 @@ msgid "Deposited liquidity:"
 msgstr "Thanh khoản tiền gửi:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "Đã gửi {0} UNI-V2"
+msgid "Deposited {0} PLP"
+msgstr "Đã gửi {0} PLP"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -1500,8 +1500,8 @@ msgid "Status"
 msgstr "Trạng thái"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "Bước 1. Nhận mã token thanh khoản UNI-V2"
+msgid "Step 1. Get PLP Liquidity tokens"
+msgstr "Bước 1. Nhận mã token thanh khoản PLP"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1781,12 +1781,12 @@ msgid "UNI {0}/{1} Burned"
 msgstr "UNI {0}/{1} đã đốt"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "Mã token UNI-V2 LP là bắt buộc. Khi bạn đã thêm tính thanh khoản vào nhóm {0}-{1} bạn có thể đặt cược mã token thanh khoản của mình trên trang này."
+msgid "PLP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "Mã token PLP là bắt buộc. Khi bạn đã thêm tính thanh khoản vào nhóm {0}-{1} bạn có thể đặt cược mã token thanh khoản của mình trên trang này."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "PLP {0}-{1}"
+msgstr "PLP {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -2060,12 +2060,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "Rút tiền thanh khoản đã ký gửi"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "Đang rút {0} UNI-V2"
+msgid "Withdrawing {0} PLP"
+msgstr "Đang rút {0} PLP"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "Đã rút UNI-V2!"
+msgid "Withdrew PLP!"
+msgstr "Đã rút PLP!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2330,12 +2330,12 @@ msgid "{0} UNI / week"
 msgstr "{0} UNI / tuần"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} PLP"
+msgstr "{0} PLP"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} mã token UNI-V2 LP có sẵn"
+msgid "{0} PLP tokens available"
+msgstr "{0} mã token PLP có sẵn"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"

@@ -621,8 +621,8 @@ msgid "Deposit Assets"
 msgstr "Внести активы"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "Внести LP-токены UNI-V2"
+msgid "Deposit PLP Tokens"
+msgstr "Внести LP-токены PLP"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -637,8 +637,8 @@ msgid "Deposited liquidity:"
 msgstr "Внесённая ликвидность:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "Внесено {0} UNI-V2"
+msgid "Deposited {0} PLP"
+msgstr "Внесено {0} PLP"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -1500,8 +1500,8 @@ msgid "Status"
 msgstr "Статус"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "Шаг 1. Получите токены ликвидности UNI-V2"
+msgid "Step 1. Get PLP Liquidity tokens"
+msgstr "Шаг 1. Получите токены ликвидности PLP"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1781,12 +1781,12 @@ msgid "UNI {0}/{1} Burned"
 msgstr "UNI {0}/{1} сожжено"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "Требуются LP-токены UNI-V2. Когда вы добавите ликвидность в пул {0}-{1}, вы сможете застейкать токены ликвидности на этой странице."
+msgid "PLP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "Требуются LP-токены PLP. Когда вы добавите ликвидность в пул {0}-{1}, вы сможете застейкать токены ликвидности на этой странице."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "PLP {0}-{1}"
+msgstr "PLP {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -2060,12 +2060,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "Вывести внесённую ликвидность"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "Вывод {0} UNI-V2"
+msgid "Withdrawing {0} PLP"
+msgstr "Вывод {0} PLP"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "Вы вывели UNI-V2!"
+msgid "Withdrew PLP!"
+msgstr "Вы вывели PLP!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2330,12 +2330,12 @@ msgid "{0} UNI / week"
 msgstr "{0} UNI в неделю"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} PLP"
+msgstr "{0} PLP"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} доступных LP-токенов UNI-V2"
+msgid "{0} PLP tokens available"
+msgstr "{0} доступных LP-токенов PLP"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"

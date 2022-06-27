@@ -621,8 +621,8 @@ msgid "Deposit Assets"
 msgstr "預け入れ資産"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "UNI-V2 LP トークンを預け入れる"
+msgid "Deposit PLP Tokens"
+msgstr "PLP トークンを預け入れる"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -637,8 +637,8 @@ msgid "Deposited liquidity:"
 msgstr "預け入れ流動性:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "預け入れた {0} UNI-V2"
+msgid "Deposited {0} PLP"
+msgstr "預け入れた {0} PLP"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -1500,8 +1500,8 @@ msgid "Status"
 msgstr "ステータス"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "ステップ1. UNI-V2流動性トークンを入手"
+msgid "Step 1. Get PLP Liquidity tokens"
+msgstr "ステップ1. PLP流動性トークンを入手"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1781,12 +1781,12 @@ msgid "UNI {0}/{1} Burned"
 msgstr "削除される UNI {0}/{1}"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "UNI-V2 LP トークンが必要です。 {0}-{1} プールに流動性を追加したら、このページに流動性トークンをステークできます。"
+msgid "PLP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "PLP トークンが必要です。 {0}-{1} プールに流動性を追加したら、このページに流動性トークンをステークできます。"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "PLP {0}-{1}"
+msgstr "PLP {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -2060,12 +2060,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "預け入れた流動性を引き出す"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "{0} UNI-V2を引き出し中"
+msgid "Withdrawing {0} PLP"
+msgstr "{0} PLPを引き出し中"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "UNI-V2を引き出しました"
+msgid "Withdrew PLP!"
+msgstr "PLPを引き出しました"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2330,12 +2330,12 @@ msgid "{0} UNI / week"
 msgstr "{0} UNI / 週"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} PLP"
+msgstr "{0} PLP"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} UNI-V2 LPトークンが利用可能"
+msgid "{0} PLP tokens available"
+msgstr "{0} PLPトークンが利用可能"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"

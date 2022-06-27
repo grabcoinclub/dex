@@ -1,5 +1,5 @@
 import { CurrencyAmount, Percent, Token, TradeType } from '@uniswap/sdk-core'
-import { Pair, Route, Trade } from '@uniswap/v2-sdk'
+import { Pair, Route, Trade } from '@dex/v2-sdk'
 import JSBI from 'jsbi'
 
 import { computeRealizedLPFeeAmount, warningSeverity } from './prices'

@@ -621,8 +621,8 @@ msgid "Deposit Assets"
 msgstr "Vklad majetku"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "Uložit žetony UNI-V2 LP"
+msgid "Deposit PLP Tokens"
+msgstr "Uložit žetony PLP"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -637,8 +637,8 @@ msgid "Deposited liquidity:"
 msgstr "Uložená likvidita:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "Uloženo {0} UNI-V2"
+msgid "Deposited {0} PLP"
+msgstr "Uloženo {0} PLP"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -1500,8 +1500,8 @@ msgid "Status"
 msgstr "Postavení"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "Krok 1. Získejte žetony likvidity UNI-V2"
+msgid "Step 1. Get PLP Liquidity tokens"
+msgstr "Krok 1. Získejte žetony likvidity PLP"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1781,12 +1781,12 @@ msgid "UNI {0}/{1} Burned"
 msgstr "UNI {0}/{1} vypáleno"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "Žetony UNI-V2 LP jsou povinné. Až přidáte likviditu do fondu {0}-{1}, můžete na této stránce uložit své žetony likvidity."
+msgid "PLP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "Žetony PLP jsou povinné. Až přidáte likviditu do fondu {0}-{1}, můžete na této stránce uložit své žetony likvidity."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "PLP {0}-{1}"
+msgstr "PLP {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -2060,12 +2060,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "Vybrat uloženou likviditu"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "Výběr {0} UNI-V2"
+msgid "Withdrawing {0} PLP"
+msgstr "Výběr {0} PLP"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "UNI-V2 vybráno!"
+msgid "Withdrew PLP!"
+msgstr "PLP vybráno!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2330,12 +2330,12 @@ msgid "{0} UNI / week"
 msgstr "{0} UNI / týden"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} PLP"
+msgstr "{0} PLP"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} dostupných žetonů UNI-V2 LP"
+msgid "{0} PLP tokens available"
+msgstr "{0} dostupných žetonů PLP"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"

@@ -621,8 +621,8 @@ msgid "Deposit Assets"
 msgstr "Mevduat Varlıkları"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "UNI-V2 LP Jetonlarını yatırın"
+msgid "Deposit PLP Tokens"
+msgstr "PLP Jetonlarını yatırın"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -637,8 +637,8 @@ msgid "Deposited liquidity:"
 msgstr "Yatırılan likidite:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "Yatırılan {0} UNI-V2"
+msgid "Deposited {0} PLP"
+msgstr "Yatırılan {0} PLP"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -1500,8 +1500,8 @@ msgid "Status"
 msgstr "Durum"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "Adım 1. UNI-V2 Likidite jetonları alın"
+msgid "Step 1. Get PLP Liquidity tokens"
+msgstr "Adım 1. PLP Likidite jetonları alın"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1781,12 +1781,12 @@ msgid "UNI {0}/{1} Burned"
 msgstr "UNI {0}/{1} Yandı"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "UNI-V2 LP jetonları gereklidir. {0}-{1} havuzuna likidite ekledikten sonra bu sayfada likidite jetonlarınızı verebilirsiniz."
+msgid "PLP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "PLP jetonları gereklidir. {0}-{1} havuzuna likidite ekledikten sonra bu sayfada likidite jetonlarınızı verebilirsiniz."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "PLP {0}-{1}"
+msgstr "PLP {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -2060,12 +2060,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "Yatırılan likiditeyi çekin"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "{0} UNI-V2 çekiliyor"
+msgid "Withdrawing {0} PLP"
+msgstr "{0} PLP çekiliyor"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "UNI-V2 çekildi!"
+msgid "Withdrew PLP!"
+msgstr "PLP çekildi!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2330,12 +2330,12 @@ msgid "{0} UNI / week"
 msgstr "{0} UNI / hafta"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} PLP"
+msgstr "{0} PLP"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} UNI-V2 LP jetonu mevcut"
+msgid "{0} PLP tokens available"
+msgstr "{0} PLP jetonu mevcut"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"

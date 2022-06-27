@@ -621,8 +621,8 @@ msgid "Deposit Assets"
 msgstr "Депозитна средства"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "Положите UNI-V2 LP токене"
+msgid "Deposit PLP Tokens"
+msgstr "Положите PLP токене"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -637,7 +637,7 @@ msgid "Deposited liquidity:"
 msgstr "Депонована ликвидност:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
+msgid "Deposited {0} PLP"
 msgstr "Положено {0} УНИ-V2"
 
 #: src/components/earn/StakingModal.tsx
@@ -1500,8 +1500,8 @@ msgid "Status"
 msgstr "Статус"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "Корак 1. Набавите UNI-V2 токене ликвидности"
+msgid "Step 1. Get PLP Liquidity tokens"
+msgstr "Корак 1. Набавите PLP токене ликвидности"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1781,12 +1781,12 @@ msgid "UNI {0}/{1} Burned"
 msgstr "UNI {0}/{1} спаљен"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "Потребни су UNI-V2 LP токени. Једном када додате ликвидност у {0}-{1} можете уложити своје токене ликвидности на овој страници."
+msgid "PLP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "Потребни су PLP токени. Једном када додате ликвидност у {0}-{1} можете уложити своје токене ликвидности на овој страници."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "PLP {0}-{1}"
+msgstr "PLP {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -2060,12 +2060,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "Повући депоновану ликвидност"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "Повлачење {0} UNI-V2"
+msgid "Withdrawing {0} PLP"
+msgstr "Повлачење {0} PLP"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "Повукао UNI-V2!"
+msgid "Withdrew PLP!"
+msgstr "Повукао PLP!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2330,12 +2330,12 @@ msgid "{0} UNI / week"
 msgstr "{0} UNI / недељно"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} PLP"
+msgstr "{0} PLP"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} UNI-V2 LP токена доступно"
+msgid "{0} PLP tokens available"
+msgstr "{0} PLP токена доступно"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"

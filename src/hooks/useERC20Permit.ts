@@ -1,6 +1,6 @@
+import { Trade as V2Trade } from '@dex/v2-sdk'
 import { splitSignature } from '@ethersproject/bytes'
 import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@uniswap/sdk-core'
-import { Trade as V2Trade } from '@uniswap/v2-sdk'
 import { Trade as V3Trade } from '@uniswap/v3-sdk'
 import JSBI from 'jsbi'
 import { useMemo, useState } from 'react'
@@ -260,7 +260,7 @@ function useERC20Permit(
 
 const REMOVE_V2_LIQUIDITY_PERMIT_INFO: PermitInfo = {
   version: '1',
-  name: 'Uniswap V2',
+  name: 'Poolex LP Token',
   type: PermitType.AMOUNT,
 }
 

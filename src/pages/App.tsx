@@ -14,19 +14,19 @@ import Web3ReactManager from '../components/Web3ReactManager'
 import { useModalOpen, useToggleModal } from '../state/application/hooks'
 import { ApplicationModal } from '../state/application/reducer'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
-import AddLiquidity from './AddLiquidity'
-import { RedirectDuplicateTokenIds } from './AddLiquidity/redirects'
+//import AddLiquidity from './AddLiquidity'
+//import { RedirectDuplicateTokenIds } from './AddLiquidity/redirects'
 import { RedirectDuplicateTokenIdsV2 } from './AddLiquidityV2/redirects'
 import Earn from './Earn'
 import Manage from './Earn/Manage'
 import MigrateV2 from './MigrateV2'
 import MigrateV2Pair from './MigrateV2/MigrateV2Pair'
-import Pool from './Pool'
-import { PositionPage } from './Pool/PositionPage'
+//import Pool from './Pool'
+//import { PositionPage } from './Pool/PositionPage'
 import PoolV2 from './Pool/v2'
 import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
-import RemoveLiquidityV3 from './RemoveLiquidity/V3'
+//import RemoveLiquidityV3 from './RemoveLiquidity/V3'
 import Swap from './Swap'
 import { OpenClaimAddressModalAndRedirectToSwap, RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
 
@@ -100,36 +100,21 @@ export default function App() {
                 <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
                 <Route exact strict path="/swap" component={Swap} />
 
-                <Route exact strict path="/pool/v2/find" component={PoolFinder} />
-                <Route exact strict path="/pool/v2" component={PoolV2} />
-                <Route exact strict path="/pool" component={Pool} />
-                <Route exact strict path="/pool/:tokenId" component={PositionPage} />
+                <Route exact strict path="/pool/find" component={PoolFinder} />
+                <Route exact strict path="/pool" component={PoolV2} />
+                {/*<Route exact strict path="/pool/v3" component={Pool} />
+                <Route exact strict path="/pool/v3/:tokenId" component={PositionPage} />*/}
 
-                <Route
-                  exact
-                  strict
-                  path="/add/v2/:currencyIdA?/:currencyIdB?"
-                  component={RedirectDuplicateTokenIdsV2}
-                />
-                <Route
-                  exact
-                  strict
-                  path="/add/:currencyIdA?/:currencyIdB?/:feeAmount?"
-                  component={RedirectDuplicateTokenIds}
-                />
+                <Route exact strict path="/add/:currencyIdA?/:currencyIdB?" component={RedirectDuplicateTokenIdsV2} />
+                {/*<Route exact strict path="/add/v3/:currencyIdA?/:currencyIdB?/:feeAmount?" component={RedirectDuplicateTokenIds} />*/}
 
-                <Route
-                  exact
-                  strict
-                  path="/increase/:currencyIdA?/:currencyIdB?/:feeAmount?/:tokenId?"
-                  component={AddLiquidity}
-                />
+                {/*<Route exact strict path="/increase/v3/:currencyIdA?/:currencyIdB?/:feeAmount?/:tokenId?" omponent={AddLiquidity} />*/}
 
-                <Route exact strict path="/remove/v2/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
-                <Route exact strict path="/remove/:tokenId" component={RemoveLiquidityV3} />
+                <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
+                {/*<Route exact strict path="/remove/v3/:tokenId" component={RemoveLiquidityV3} />*/}
 
-                <Route exact strict path="/migrate/v2" component={MigrateV2} />
-                <Route exact strict path="/migrate/v2/:address" component={MigrateV2Pair} />
+                <Route exact strict path="/migrate" component={MigrateV2} />
+                <Route exact strict path="/migrate/:address" component={MigrateV2Pair} />
 
                 <Route component={RedirectPathToSwapOnly} />
               </Switch>

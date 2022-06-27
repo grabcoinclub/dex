@@ -721,14 +721,14 @@ export default function MigrateV2Pair({
       !token0Address)
   ) {
     console.error('Invalid pair address')
-    return <Redirect to="/migrate/v2" />
+    return <Redirect to="/migrate" />
   }
 
   return (
     <BodyWrapper style={{ padding: 24 }}>
       <AutoColumn gap="16px">
         <AutoRow style={{ alignItems: 'center', justifyContent: 'space-between' }} gap="8px">
-          <BackArrow to="/migrate/v2" />
+          <BackArrow to="/migrate" />
           <ThemedText.MediumHeader>
             <Trans>Migrate V2 Liquidity</Trans>
           </ThemedText.MediumHeader>

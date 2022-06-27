@@ -1,5 +1,5 @@
+import { computePairAddress, Pair } from '@dex/v2-sdk'
 import { Percent, Token } from '@uniswap/sdk-core'
-import { computePairAddress, Pair } from '@uniswap/v2-sdk'
 import { L2_CHAIN_IDS, SupportedChainId } from 'constants/chains'
 import { SupportedLocale } from 'constants/locales'
 import { L2_DEADLINE_FROM_NOW } from 'constants/misc'
@@ -274,8 +274,8 @@ export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
     tokenA.chainId,
     computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB }),
     18,
-    'UNI-V2',
-    'Uniswap V2'
+    'PLP',
+    'Poolex LP Token'
   )
 }
 

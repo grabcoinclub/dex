@@ -1,7 +1,7 @@
+import { Pair } from '@dex/v2-sdk'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
 import { CurrencyAmount, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
 import { useCallback, useState } from 'react'
 import styled from 'styled-components/macro'
 
@@ -220,7 +220,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
               <Trans>Depositing Liquidity</Trans>
             </ThemedText.LargeHeader>
             <ThemedText.Body fontSize={20}>
-              <Trans>{parsedAmount?.toSignificant(4)} UNI-V2</Trans>
+              <Trans>{parsedAmount?.toSignificant(4)} PLP</Trans>
             </ThemedText.Body>
           </AutoColumn>
         </LoadingView>
@@ -232,7 +232,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
               <Trans>Transaction Submitted</Trans>
             </ThemedText.LargeHeader>
             <ThemedText.Body fontSize={20}>
-              <Trans>Deposited {parsedAmount?.toSignificant(4)} UNI-V2</Trans>
+              <Trans>Deposited {parsedAmount?.toSignificant(4)} PLP</Trans>
             </ThemedText.Body>
           </AutoColumn>
         </SubmittedView>

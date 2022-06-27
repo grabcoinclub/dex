@@ -63,7 +63,7 @@ export default function SushiPositionCard({ tokenA, tokenB, liquidityToken, bord
               $borderRadius="12px"
               width="fit-content"
               as={Link}
-              to={`/migrate/v2/${liquidityToken.address}`}
+              to={`/migrate/${liquidityToken.address}`}
             >
               <Trans>Migrate</Trans>
             </ButtonEmpty>

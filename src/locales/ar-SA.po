@@ -621,8 +621,8 @@ msgid "Deposit Assets"
 msgstr "أصول الإيداع"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "إيداع رموز UNI-V2 LP"
+msgid "Deposit PLP Tokens"
+msgstr "إيداع رموز PLP"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -637,8 +637,8 @@ msgid "Deposited liquidity:"
 msgstr "السيولة المودعة"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "تم ايداع {0} UNI-V2"
+msgid "Deposited {0} PLP"
+msgstr "تم ايداع {0} PLP"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -1500,8 +1500,8 @@ msgid "Status"
 msgstr "حالة"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "الخطوة 1. احصل على رمز سيولة UNI-V2"
+msgid "Step 1. Get PLP Liquidity tokens"
+msgstr "الخطوة 1. احصل على رمز سيولة PLP"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1781,12 +1781,12 @@ msgid "UNI {0}/{1} Burned"
 msgstr "UNI {0}/{1} محروق"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "مطلوب رمز UNI-V2 LP. بمجرد إضافة السيولة إلى مجموعة {0}-{1} يمكنك الحصول على رموز السيولة الخاصة بك على هذه الصفحة."
+msgid "PLP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "مطلوب رمز PLP. بمجرد إضافة السيولة إلى مجموعة {0}-{1} يمكنك الحصول على رموز السيولة الخاصة بك على هذه الصفحة."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "PLP {0}-{1}"
+msgstr "PLP {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -2060,12 +2060,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "سحب السيولة المودعة"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "سحب {0} UNI-V2"
+msgid "Withdrawing {0} PLP"
+msgstr "سحب {0} PLP"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "سحب UNI-V2!"
+msgid "Withdrew PLP!"
+msgstr "سحب PLP!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2330,12 +2330,12 @@ msgid "{0} UNI / week"
 msgstr "{0} UNI / أسبوع"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} PLP"
+msgstr "{0} PLP"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} رموز UNI-V2 LP متاحة"
+msgid "{0} PLP tokens available"
+msgstr "{0} رموز PLP متاحة"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"

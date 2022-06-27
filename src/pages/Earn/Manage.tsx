@@ -203,13 +203,13 @@ export default function Manage({
             <AutoColumn gap="md">
               <RowBetween>
                 <ThemedText.White fontWeight={600}>
-                  <Trans>Step 1. Get UNI-V2 Liquidity tokens</Trans>
+                  <Trans>Step 1. Get PLP Liquidity tokens</Trans>
                 </ThemedText.White>
               </RowBetween>
               <RowBetween style={{ marginBottom: '1rem' }}>
                 <ThemedText.White fontSize={14}>
                   <Trans>
-                    UNI-V2 LP tokens are required. Once you&apos;ve added liquidity to the {currencyA?.symbol}-
+                    PLP tokens are required. Once you&apos;ve added liquidity to the {currencyA?.symbol}-
                     {currencyB?.symbol} pool you can stake your liquidity tokens on this page.
                   </Trans>
                 </ThemedText.White>
@@ -271,7 +271,7 @@ export default function Manage({
                   </ThemedText.White>
                   <ThemedText.White>
                     <Trans>
-                      UNI-V2 {currencyA?.symbol}-{currencyB?.symbol}
+                      PLP {currencyA?.symbol}-{currencyB?.symbol}
                     </Trans>
                   </ThemedText.White>
                 </RowBetween>
@@ -343,7 +343,7 @@ export default function Manage({
                 {stakingInfo?.stakedAmount?.greaterThan(JSBI.BigInt(0)) ? (
                   <Trans>Deposit</Trans>
                 ) : (
-                  <Trans>Deposit UNI-V2 LP Tokens</Trans>
+                  <Trans>Deposit PLP Tokens</Trans>
                 )}
               </ButtonPrimary>
             )}
@@ -364,7 +364,7 @@ export default function Manage({
         )}
         {!userLiquidityUnstaked ? null : userLiquidityUnstaked.equalTo('0') ? null : !stakingInfo?.active ? null : (
           <ThemedText.Main>
-            <Trans>{userLiquidityUnstaked.toSignificant(6)} UNI-V2 LP tokens available</Trans>
+            <Trans>{userLiquidityUnstaked.toSignificant(6)} PLP tokens available</Trans>
           </ThemedText.Main>
         )}
       </PositionInfo>

@@ -167,7 +167,7 @@ export default function Pool() {
           <ChevronsRight size={16} />
         </MenuItem>
       ),
-      link: '/migrate/v2',
+      link: '/migrate',
       external: false,
     },
     {
@@ -177,7 +177,7 @@ export default function Pool() {
           <Layers size={16} />
         </MenuItem>
       ),
-      link: '/pool/v2',
+      link: '/pool',
       external: false,
     },
     {
@@ -269,7 +269,7 @@ export default function Pool() {
                 <RowFixed>
                   <ButtonOutlined
                     as={Link}
-                    to="/pool/v2"
+                    to="/pool"
                     id="import-pool-link"
                     style={{
                       padding: '8px 16px',
@@ -286,7 +286,7 @@ export default function Pool() {
                   {positions && positions.length > 0 && (
                     <ButtonOutlined
                       as={Link}
-                      to="/migrate/v2"
+                      to="/migrate"
                       id="import-pool-link"
                       style={{
                         padding: '8px 16px',

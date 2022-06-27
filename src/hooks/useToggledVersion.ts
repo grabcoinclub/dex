@@ -1,4 +1,4 @@
-import useParsedQueryString from './useParsedQueryString'
+//import useParsedQueryString from './useParsedQueryString'
 
 export enum Version {
   v2 = 'V2',
@@ -6,7 +6,8 @@ export enum Version {
 }
 
 export default function useToggledVersion(): Version | undefined {
-  const { use } = useParsedQueryString()
+  return Version.v2
+  /*const { use } = useParsedQueryString()
   if (typeof use !== 'string') {
     return undefined
   }
@@ -17,5 +18,5 @@ export default function useToggledVersion(): Version | undefined {
       return Version.v3
     default:
       return undefined
-  }
+  }*/
 }

@@ -1,8 +1,8 @@
+import { Pair } from '@dex/v2-sdk'
 import { getCreate2Address } from '@ethersproject/address'
 import { keccak256, pack } from '@ethersproject/solidity'
 import { Trans } from '@lingui/macro'
 import { Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
 import MigrateSushiPositionCard from 'components/PositionCard/Sushi'
 import MigrateV2PositionCard from 'components/PositionCard/V2'
 import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
@@ -116,7 +116,7 @@ export default function MigrateV2() {
       <BodyWrapper style={{ padding: 24 }}>
         <AutoColumn gap="16px">
           <AutoRow style={{ alignItems: 'center', justifyContent: 'space-between' }} gap="8px">
-            <BackArrow to="/pool/v2" />
+            <BackArrow to="/pool" />
             <ThemedText.MediumHeader>
               <Trans>Migrate V2 Liquidity</Trans>
             </ThemedText.MediumHeader>
@@ -173,7 +173,7 @@ export default function MigrateV2() {
             <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
               <Trans>
                 Don’t see one of your v2 positions?{' '}
-                <StyledInternalLink id="import-pool-link" to={'/find?origin=/migrate/v2'}>
+                <StyledInternalLink id="import-pool-link" to={'/find?origin=/migrate'}>
                   Import it.
                 </StyledInternalLink>
               </Trans>
