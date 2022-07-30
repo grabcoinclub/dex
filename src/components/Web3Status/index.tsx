@@ -34,8 +34,8 @@ const Web3StatusGeneric = styled(ButtonSecondary)`
   ${({ theme }) => theme.flexRowNoWrap}
   width: 100%;
   align-items: center;
-  padding: 0.5rem;
-  border-radius: 12px;
+  padding: 13px 35px;
+  border-radius: 30px;
   cursor: pointer;
   user-select: none;
   :focus {
@@ -54,28 +54,25 @@ const Web3StatusError = styled(Web3StatusGeneric)`
 `
 
 const Web3StatusConnect = styled(Web3StatusGeneric)<{ faded?: boolean }>`
-  background-color: ${({ theme }) => theme.primary4};
+  background: linear-gradient(270deg, rgba(255, 204, 0, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
   border: none;
 
-  color: ${({ theme }) => theme.primaryText1};
+  color: #FF00FF;
   font-weight: 500;
 
   :hover,
   :focus {
-    border: 1px solid ${({ theme }) => darken(0.05, theme.primary4)};
+    border: none;
     color: ${({ theme }) => theme.primaryText1};
   }
 
   ${({ faded }) =>
     faded &&
     css`
-      background-color: ${({ theme }) => theme.primary5};
-      border: 1px solid ${({ theme }) => theme.primary5};
-      color: ${({ theme }) => theme.primaryText1};
 
       :hover,
       :focus {
-        border: 1px solid ${({ theme }) => darken(0.05, theme.primary4)};
+        border: none;
         color: ${({ theme }) => darken(0.05, theme.primaryText1)};
       }
     `}

@@ -97,9 +97,9 @@ const LinkOutCircle = styled(ArrowDownCircle)`
   height: 16px;
 `
 const Logo = styled.img`
-  height: 20px;
-  width: 20px;
-  margin-right: 8px;
+  height: 17px;
+  width: 17px;
+  margin-right: 14px;
 `
 const NetworkLabel = styled.div`
   flex: 1 1 auto;
@@ -115,13 +115,13 @@ const SelectorControls = styled.div<{ interactive: boolean }>`
   align-items: center;
   background-color: ${({ theme }) => theme.bg1};
   border: 2px solid ${({ theme }) => theme.bg1};
-  border-radius: 12px;
+  border-radius: 30px;
   color: ${({ theme }) => theme.text1};
   cursor: ${({ interactive }) => (interactive ? 'pointer' : 'auto')};
   display: flex;
   font-weight: 500;
   justify-content: space-between;
-  padding: 6px 8px;
+  padding: 11px 32px;
 `
 const SelectorLogo = styled(Logo)<{ interactive?: boolean }>`
   margin-right: ${({ interactive }) => (interactive ? 8 : 0)}px;

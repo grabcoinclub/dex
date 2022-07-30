@@ -11,7 +11,7 @@ import styled, { ThemeContext } from 'styled-components/macro'
 import { /*ButtonOutlined,*/ ButtonPrimary, ButtonSecondary } from '../../components/Button'
 import Card from '../../components/Card'
 import { AutoColumn } from '../../components/Column'
-import { CardBGImage, CardNoise, CardSection, DataCard } from '../../components/earn/styled'
+import { DataCard } from '../../components/earn/styled'
 import { SwapPoolTabs } from '../../components/NavigationTabs'
 import FullPositionCard from '../../components/PositionCard'
 import { RowBetween, RowFixed } from '../../components/Row'
@@ -23,7 +23,7 @@ import { useActiveWeb3React } from '../../hooks/web3'
 import { useStakingInfo } from '../../state/stake/hooks'
 import { toV2LiquidityToken, useTrackedTokenPairs } from '../../state/user/hooks'
 import { useTokenBalancesWithLoadingIndicator } from '../../state/wallet/hooks'
-import { ExternalLink, HideSmall, ThemedText } from '../../theme'
+import { HideSmall, ThemedText } from '../../theme'
 
 const PageWrapper = styled(AutoColumn)`
   max-width: 640px;
@@ -138,7 +138,7 @@ export default function Pool() {
     <>
       <PageWrapper>
         <SwapPoolTabs active={'pool'} />
-        <VoteCard>
+        {/* <VoteCard>
           <CardBGImage />
           <CardNoise />
           <CardSection>
@@ -169,7 +169,7 @@ export default function Pool() {
           </CardSection>
           <CardBGImage />
           <CardNoise />
-        </VoteCard>
+        </VoteCard> */}
 
         {ON_L2 ? (
           <AutoColumn gap="lg" justify="center">

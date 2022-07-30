@@ -36,7 +36,7 @@ const HeaderFrame = styled.div<{ showBackground: boolean }>`
   width: 100%;
   top: 0;
   position: relative;
-  padding: 1rem;
+  padding: 2rem;
   z-index: 21;
   position: relative;
   /* Background slide effect on scroll. */
@@ -91,11 +91,10 @@ const HeaderLinks = styled(Row)`
   justify-self: center;
   background-color: ${({ theme }) => theme.bg0};
   width: fit-content;
-  padding: 4px;
-  border-radius: 16px;
+  padding: 0px;
+  border-radius: 30px;
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 10px;
   overflow: auto;
   align-items: center;
   ${({ theme }) => theme.mediaWidth.upToLarge`
@@ -124,7 +123,7 @@ const AccountElement = styled.div<{ active: boolean }>`
   flex-direction: row;
   align-items: center;
   background-color: ${({ theme, active }) => (!active ? theme.bg1 : theme.bg1)};
-  border-radius: 12px;
+  border-radius: 30px;
   white-space: nowrap;
   width: 100%;
 
@@ -190,27 +189,24 @@ const StyledNavLink = styled(NavLink).attrs({
 })`
   ${({ theme }) => theme.flexRowNoWrap}
   align-items: left;
-  border-radius: 3rem;
+  border-radius: 30px;
   outline: none;
   cursor: pointer;
   text-decoration: none;
   color: ${({ theme }) => theme.text2};
   font-size: 1rem;
-  font-weight: 500;
-  padding: 8px 12px;
+  font-weight: 600;
+  padding: 13px 35px;
   word-break: break-word;
   overflow: hidden;
   white-space: nowrap;
   &.${activeClassName} {
-    border-radius: 12px;
-    font-weight: 600;
     justify-content: center;
-    color: ${({ theme }) => theme.text1};
-    background-color: ${({ theme }) => theme.bg2};
+    color: #fff;
+    background: linear-gradient(270deg, #FFCC00 0%, #FF00FF 100%);
   }
 
-  :hover,
-  :focus {
+  :hover {
     color: ${({ theme }) => darken(0.1, theme.text1)};
   }
 `
@@ -273,7 +269,7 @@ export default function Header() {
       </Modal>
       <Title href=".">
         <UniIcon>
-          <Logo fill={darkMode ? white : black} width="24px" height="100%" title="logo" />
+          <Logo fill={darkMode ? white : black} width="108px" height="100%" title="logo" />
         </UniIcon>
       </Title>
       <HeaderLinks>

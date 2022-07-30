@@ -7,15 +7,15 @@ import { useActiveLocale } from 'hooks/useActiveLocale'
 import { useLocationLinkProps } from 'hooks/useLocationLinkProps'
 import React, { useEffect, useRef, useState } from 'react'
 import {
-  BookOpen,
+  // BookOpen,
   Check,
   ChevronLeft,
-  Coffee,
-  FileText,
+  // Coffee,
+  // FileText,
   Globe,
-  HelpCircle,
-  Info,
-  MessageCircle,
+  // HelpCircle,
+  // Info,
+  // MessageCircle,
   Moon,
   Sun,
 } from 'react-feather'
@@ -243,7 +243,7 @@ export default function Menu() {
               default:
                 return (
                   <MenuFlyout>
-                    <MenuItem href="https://uniswap.org/">
+                    {/* <MenuItem href="https://uniswap.org/">
                       <div>
                         <Trans>About</Trans>
                       </div>
@@ -266,7 +266,7 @@ export default function Menu() {
                         <Trans>Discord</Trans>
                       </div>
                       <MessageCircle opacity={0.6} size={16} />
-                    </MenuItem>
+                    </MenuItem> */}
                     <ToggleMenuItem onClick={() => setMenu('lang')}>
                       <div>
                         <Trans>Language</Trans>
@@ -277,7 +277,7 @@ export default function Menu() {
                       <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>
                       {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}
                     </ToggleMenuItem>
-                    <MenuItem href="https://docs.uniswap.org/">
+                    {/* <MenuItem href="https://docs.uniswap.org/">
                       <div>
                         <Trans>Docs</Trans>
                       </div>
@@ -299,7 +299,7 @@ export default function Menu() {
                       >
                         <Trans>Claim UNI</Trans>
                       </UNIbutton>
-                    )}
+                    )} */}
                   </MenuFlyout>
                 )
             }
