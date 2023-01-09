@@ -49,18 +49,16 @@ const StyledMenuButton = styled.button`
   background-color: transparent;
   margin: 0;
   padding: 0;
-  height: 38px;
+  height: 44px;
   background-color: ${({ theme }) => theme.bg0};
-  border: 1px solid ${({ theme }) => theme.bg0};
 
-  padding: 0.15rem 0.5rem;
-  border-radius: 12px;
+  padding: 0.15rem 1rem;
+  border-radius: 30px;
 
   :hover,
   :focus {
     cursor: pointer;
     outline: none;
-    border: 1px solid ${({ theme }) => theme.bg3};
   }
 
   svg {

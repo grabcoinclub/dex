@@ -9,6 +9,7 @@ export const BodyWrapper = styled.main<{ margin?: string; maxWidth?: string }>`
   width: 100%;
   background: ${({ theme }) => theme.bg0};
   border-radius: 30px;
+  backdrop-filter: blur(2px);
   margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;

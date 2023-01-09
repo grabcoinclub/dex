@@ -51,7 +51,7 @@ const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } 
 const white = '#FFFFFF'
 const black = '#000000'
 
-function colors(darkMode: boolean): Colors {
+function colors(darkMode: boolean): { blue1: string; bg0: string; advancedBG: string; primary1: string; bg2: string; error: string; bg1: string; blue4: string; bg4: string; bg3: string; blue2: string; bg6: string; bg5: string; modalBG: string; bg7: string; white: string; primary2: string; primary3: string; primary4: string; primary5: string; warning: string; black: string; yellow1: string; yellow2: string; yellow3: string; text3: string; secondary1: string; red2: string; text4: string; red1: string; text1: string; primaryText1: string; secondary3: string; success: string; text2: string; secondary2: string; red3: string; green1: string; text5: string; darkMode: boolean } {
   return {
     darkMode,
     // base
@@ -66,13 +66,14 @@ function colors(darkMode: boolean): Colors {
     text5: darkMode ? '#2C2F36' : '#EDEEF2',
 
     // backgrounds / greys
-    bg0: darkMode ? '#191B1F' : '#FFF',
+    bg0: darkMode ? 'rgba(255, 255, 255, 0.12);' : '#FFF',
     bg1: darkMode ? '#212429' : '#F7F8FA',
     bg2: darkMode ? '#2C2F36' : '#EDEEF2',
     bg3: darkMode ? '#40444F' : '#CED0D9',
     bg4: darkMode ? '#565A69' : '#888D9B',
     bg5: darkMode ? '#6C7284' : '#888D9B',
     bg6: darkMode ? '#1A2028' : '#6C7284',
+    bg7: darkMode ? 'linear-gradient(90deg, #550055 0%, #041E6C 100%)' : 'linear-gradient(90deg, rgba(255, 0, 255, 0.12) 0%, rgba(51, 102, 255, 0.12) 100%)',
 
     //specialty colors
     modalBG: darkMode ? 'rgba(0,0,0,.425)' : 'rgba(0,0,0,0.3)',
@@ -211,6 +212,10 @@ export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: ${({ theme }) => theme.text1};
   background-color: ${({ theme }) => theme.bg1} !important;
+}
+
+#background-radial-gradient {
+  background:  ${({ theme }) => theme.bg7};
 }
 
 a {
