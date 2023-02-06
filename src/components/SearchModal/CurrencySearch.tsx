@@ -39,8 +39,7 @@ const Footer = styled.div`
   padding: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  background-color: ${({ theme }) => theme.bg1};
-  border-top: 1px solid ${({ theme }) => theme.bg2};
+  background-color: rgba(255, 0, 255, 0.06);;
 `
 
 interface CurrencySearchProps {
@@ -177,7 +176,7 @@ export function CurrencySearch({
     <ContentWrapper>
       <PaddedColumn gap="16px">
         <RowBetween>
-          <Text fontWeight={500} fontSize={16}>
+          <Text fontWeight={500} fontSize={16} color={theme.black}>
             <Trans>Select a token</Trans>
           </Text>
           <CloseIcon onClick={onDismiss} />
@@ -236,7 +235,7 @@ export function CurrencySearch({
               <IconWrapper size="16px" marginRight="6px" stroke={theme.primaryText1}>
                 <Edit />
               </IconWrapper>
-              <ThemedText.Main color={theme.primaryText1}>
+              <ThemedText.Main color="#FF00FF">
                 <Trans>Manage Token Lists</Trans>
               </ThemedText.Main>
             </RowFixed>

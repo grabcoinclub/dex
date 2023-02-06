@@ -114,6 +114,7 @@ function CurrencyRow({
   style: CSSProperties
   showCurrencyAmount?: boolean
 }) {
+  const theme = useTheme()
   const { account } = useActiveWeb3React()
   const key = currencyKey(currency)
   const selectedTokenList = useCombinedActiveList()
@@ -132,7 +133,7 @@ function CurrencyRow({
     >
       <CurrencyLogo currency={currency} size={'24px'} />
       <Column>
-        <Text title={currency.name} fontWeight={500}>
+        <Text title={currency.name} fontWeight={500} color={theme.black}>
           {currency.symbol}
         </Text>
         <ThemedText.DarkGray ml="0px" fontSize={'12px'} fontWeight={300}>
@@ -167,7 +168,7 @@ function BreakLineComponent({ style }: { style: CSSProperties }) {
         <RowBetween>
           <RowFixed>
             <TokenListLogoWrapper src={TokenListLogo} />
-            <ThemedText.Main ml="6px" fontSize="12px" color={theme.text1}>
+            <ThemedText.Main ml="6px" fontSize="12px" color={theme.black}>
               <Trans>Expanded results from inactive Token Lists</Trans>
             </ThemedText.Main>
           </RowFixed>

@@ -24,8 +24,6 @@ export const ArrowWrapper = styled.div<{ clickable: boolean }>`
   margin-top: -14px;
   margin-bottom: -14px;
   /* transform: rotate(90deg); */
-  background-color: ${({ theme }) => theme.bg1};
-  border: 4px solid ${({ theme }) => theme.bg0};
   z-index: 2;
   ${({ clickable }) =>
     clickable

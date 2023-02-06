@@ -51,7 +51,7 @@ const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } 
 const white = '#FFFFFF'
 const black = '#000000'
 
-function colors(darkMode: boolean): { blue1: string; bg0: string; advancedBG: string; primary1: string; bg2: string; error: string; bg1: string; blue4: string; bg4: string; bg3: string; blue2: string; bg6: string; bg5: string; modalBG: string; bg7: string; white: string; primary2: string; primary3: string; primary4: string; primary5: string; warning: string; black: string; yellow1: string; yellow2: string; yellow3: string; text3: string; secondary1: string; red2: string; text4: string; red1: string; text1: string; primaryText1: string; secondary3: string; success: string; text2: string; secondary2: string; red3: string; green1: string; text5: string; darkMode: boolean } {
+function colors(darkMode: boolean): { blue1: string; bg0: string; advancedBG: string; primary1: string; bg2: string; error: string; bg1: string; blue4: string; bg4: string; bg3: string; blue2: string; bg6: string; bg5: string; modalBG: string; bg7: string; white: string; primary2: string; primary3: string; primary4: string; primary5: string; warning: string; black: string; yellow1: string; yellow2: string; yellow3: string; text3: string; secondary1: string; red2: string; text4: string; red1: string; text1: string; primaryText1: string; secondary3: string; success: string; text2: string; secondary2: string; red3: string; green1: string; text5: string; text6: string, darkMode: boolean } {
   return {
     darkMode,
     // base
@@ -64,6 +64,7 @@ function colors(darkMode: boolean): { blue1: string; bg0: string; advancedBG: st
     text3: darkMode ? '#8F96AC' : '#6E727D',
     text4: darkMode ? '#B2B9D2' : '#C3C5CB',
     text5: darkMode ? '#2C2F36' : '#EDEEF2',
+    text6: darkMode ? '#FFFFFF' : '#7F7F7F',
 
     // backgrounds / greys
     bg0: darkMode ? 'rgba(255, 255, 255, 0.12);' : '#FFF',

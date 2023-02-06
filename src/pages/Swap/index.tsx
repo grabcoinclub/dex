@@ -12,7 +12,7 @@ import UnsupportedCurrencyFooter from 'components/swap/UnsupportedCurrencyFooter
 import { MouseoverTooltip, MouseoverTooltipContent } from 'components/Tooltip'
 import JSBI from 'jsbi'
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
-import { ArrowDown, CheckCircle, HelpCircle, Info } from 'react-feather'
+import { CheckCircle, HelpCircle, Info, Repeat } from 'react-feather'
 import ReactGA from 'react-ga'
 import { RouteComponentProps } from 'react-router-dom'
 import { Text } from 'rebass'
@@ -415,7 +415,7 @@ export default function Swap({ history }: RouteComponentProps) {
                 loading={independentField === Field.OUTPUT && routeIsSyncing}
               />
               <ArrowWrapper clickable>
-                <ArrowDown
+                <Repeat
                   size="16"
                   onClick={() => {
                     setApprovalSubmitted(false) // reset 2 step UI for approvals
@@ -445,7 +445,7 @@ export default function Swap({ history }: RouteComponentProps) {
               <>
                 <AutoRow justify="space-between" style={{ padding: '0 1rem' }}>
                   <ArrowWrapper clickable={false}>
-                    <ArrowDown size="16" color={theme.text2} />
+                    <Repeat size="16" color={theme.text6} />
                   </ArrowWrapper>
                   <LinkStyledButton id="remove-recipient-button" onClick={() => onChangeRecipient(null)}>
                     <Trans>- Remove recipient</Trans>

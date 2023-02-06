@@ -5,6 +5,7 @@ import CurrencyLogo from 'components/CurrencyLogo'
 import QuestionHelper from 'components/QuestionHelper'
 import { AutoRow } from 'components/Row'
 import { COMMON_BASES } from 'constants/routing'
+import useTheme from 'hooks/useTheme'
 import { useTokenInfoFromActiveList } from 'hooks/useTokenInfoFromActiveList'
 import { Text } from 'rebass'
 import styled from 'styled-components/macro'
@@ -43,11 +44,12 @@ export default function CommonBases({
   onSelect: (currency: Currency) => void
 }) {
   const bases = typeof chainId !== 'undefined' ? COMMON_BASES[chainId] ?? [] : []
+  const theme = useTheme()
 
   return bases.length > 0 ? (
     <MobileWrapper gap="md">
       <AutoRow>
-        <Text fontWeight={500} fontSize={14}>
+        <Text fontWeight={500} fontSize={14} color={theme.black}>
           <Trans>Common bases</Trans>
         </Text>
         <QuestionHelper text={<Trans>These tokens are commonly paired with other tokens.</Trans>} />
@@ -62,7 +64,7 @@ export default function CommonBases({
               key={currencyId(currency)}
             >
               <CurrencyLogoFromList currency={currency} />
-              <Text fontWeight={500} fontSize={16}>
+              <Text fontWeight={500} fontSize={16} color={theme.black}>
                 {currency.symbol}
               </Text>
             </BaseWrapper>
