@@ -54,10 +54,10 @@ const Web3StatusError = styled(Web3StatusGeneric)`
 `
 
 const Web3StatusConnect = styled(Web3StatusGeneric)<{ faded?: boolean }>`
-  background: linear-gradient(270deg, rgba(255, 204, 0, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
+  background: ${({ theme }) => theme.bg8};
   border: none;
 
-  color: #FF00FF;
+  color: ${({ theme }) => theme.text7};
   font-weight: 500;
 
   :hover,

@@ -51,7 +51,7 @@ const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } 
 const white = '#FFFFFF'
 const black = '#000000'
 
-function colors(darkMode: boolean): { blue1: string; bg0: string; advancedBG: string; primary1: string; bg2: string; error: string; bg1: string; blue4: string; bg4: string; bg3: string; blue2: string; bg6: string; bg5: string; modalBG: string; bg7: string; white: string; primary2: string; primary3: string; primary4: string; primary5: string; warning: string; black: string; yellow1: string; yellow2: string; yellow3: string; text3: string; secondary1: string; red2: string; text4: string; red1: string; text1: string; primaryText1: string; secondary3: string; success: string; text2: string; secondary2: string; red3: string; green1: string; text5: string; text6: string, darkMode: boolean } {
+function colors(darkMode: boolean): { blue1: string; bg0: string; advancedBG: string; primary1: string; bg2: string; error: string; bg1: string; blue4: string; bg4: string; bg3: string; blue2: string; bg6: string; bg5: string; modalBG: string; bg7: string; bg8: string; white: string; primary2: string; primary3: string; primary4: string; primary5: string; warning: string; black: string; yellow1: string; yellow2: string; yellow3: string; text3: string; secondary1: string; red2: string; text4: string; red1: string; text1: string; primaryText1: string; secondary3: string; success: string; text2: string; secondary2: string; red3: string; green1: string; text5: string; text6: string; text7: string; darkMode: boolean } {
   return {
     darkMode,
     // base
@@ -65,6 +65,7 @@ function colors(darkMode: boolean): { blue1: string; bg0: string; advancedBG: st
     text4: darkMode ? '#B2B9D2' : '#C3C5CB',
     text5: darkMode ? '#2C2F36' : '#EDEEF2',
     text6: darkMode ? '#FFFFFF' : '#7F7F7F',
+    text7: darkMode ? '#FFFFFF' : '#FF00FF',
 
     // backgrounds / greys
     bg0: darkMode ? 'rgba(255, 255, 255, 0.12);' : '#FFF',
@@ -75,6 +76,7 @@ function colors(darkMode: boolean): { blue1: string; bg0: string; advancedBG: st
     bg5: darkMode ? '#6C7284' : '#888D9B',
     bg6: darkMode ? '#1A2028' : '#6C7284',
     bg7: darkMode ? 'linear-gradient(90deg, #550055 0%, #041E6C 100%)' : 'linear-gradient(90deg, rgba(255, 0, 255, 0.12) 0%, rgba(51, 102, 255, 0.12) 100%)',
+    bg8: darkMode ? 'linear-gradient(270deg,#FFCC00 0%,#FF00FF 100%)' : 'linear-gradient(270deg, rgba(255, 204, 0, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%)',
 
     //specialty colors
     modalBG: darkMode ? 'rgba(0,0,0,.425)' : 'rgba(0,0,0,0.3)',
